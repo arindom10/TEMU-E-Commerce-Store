@@ -49,8 +49,28 @@ const Header = () => {
 
         <div className="w-full flex justify-between items-center py-3 sm:py-4 bg-white/80 shadow-sm border-b border-gray-100 backdrop-blur-sm">
           <div className="flex justify-between items-center container mx-auto px-8">
-            <div></div>
-            <Link href=""></Link>
+            <div className="flex flex-1 justify-start items-center gap-4 sm:gap-6">
+              <button className="text-gray-700 hover:text-gray-900 md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 sm:h-6 sm:w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+              <nav className="hidden md:flex gap-4 lg:gap-6 text-sm font-medium">
+                <Link href="#">Sale</Link>
+              </nav>
+            </div>
+            <Link href="#"></Link>
 
             <div></div>
           </div>
