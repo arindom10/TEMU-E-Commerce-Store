@@ -50,7 +50,7 @@ const Header = () => {
         <div className="w-full flex justify-between items-center py-3 sm:py-4 bg-white/80 shadow-sm border-b border-gray-100 backdrop-blur-sm">
           <div className="flex justify-between items-center container mx-auto px-8">
             <div></div>
-            <Link></Link>
+            <Link href=""></Link>
 
             <div></div>
           </div>
