@@ -135,7 +135,7 @@ export const registerUser = async (email: string, password: string) => {
     const user = await prisma.user.create({
       data: {
         email,
-        passwordHash,
+        password: passwordHash,
       },
     });
 
@@ -170,7 +170,7 @@ export const loginUser = async (email: string, password: string) => {
     };
   }
 
-  const passwordValid = await verifyPassword(password, user.passwordHash);
+  const passwordValid = await verifyPassword(password, user.password);
   if (!passwordValid) {
     return {
       user: null,
